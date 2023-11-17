@@ -13,7 +13,7 @@ $resultado = mysqli_query($conexion, $consulta);
 // Verificación y generación del PDF
 if ($fila = mysqli_fetch_assoc($resultado)) {
     // Crear instancia de FPDF
-    $pdf = new PDFWithAlpha();
+    $pdf = new FPDF();
     $pdf->AddPage();
 
 // Obtener el ancho de la página
@@ -39,9 +39,8 @@ $width = 100; // ajusta según tus necesidades
 $height = 100; // ajusta según tus necesidades
 
 // Agregar marca de agua
-$pdf->SetAlpha(0.5); // Establecer transparencia
 $pdf->Image('../img/logo.png', $x, $y, $width, $height);
-// $pdf->SetAlpha(1);
+$pdf->SetY(0);
 
 
     // Generar contenido del certificado
@@ -57,8 +56,8 @@ $pdf->Image('../img/logo.png', $x, $y, $width, $height);
     
     // Agregar contenido al PDF
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Write(30, "$fecha\n\nCERTIFICADO LABORAL\n\n");
-    $pdf->Write(30, "Por medio de la presente, la empresa $empresa, identificada con el NIT $nit,\n");
+    $pdf->Write(20, "$fecha\n\nCERTIFICADO LABORAL\n\n");
+    $pdf->MultiCell(0,5, "Por medio de la presente, la empresa $empresa, identificada con el NIT $nit,\n");
  
 
     // Descargar el PDF generado
