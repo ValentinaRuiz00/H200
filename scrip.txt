@@ -4,10 +4,12 @@ CREATE TABLE personas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     cedula VARCHAR(15) NOT NULL,
-    edad INT,
-    direccion VARCHAR(100)
+    cargo VARCHAR(50), 
+    fecha DATE 
 );
 
 
-INSERT INTO personas (nombre, cedula, edad, direccion)
-VALUES ('Juan Pérez', '123456789', 25, 'Calle Principal 123');
+
+INSERT INTO personas (nombre, cedula, cargo, fecha)
+VALUES ('LUZ ESDERYS MUNERA SANCHEZ', '43567710', 'Analista administrativa', CURRENT_TIMESTAMP);
+
