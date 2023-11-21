@@ -48,6 +48,15 @@ body {
     box-sizing: border-box;
 }
 
+/* Ocultar las flechas de incremento y decremento en el input de tipo número */
+.input-text[type="number"]::-webkit-inner-spin-button,
+.input-text[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
 /* Estilo para el placeholder del input */
 .input-text::placeholder {
     color: #95a5a6;
