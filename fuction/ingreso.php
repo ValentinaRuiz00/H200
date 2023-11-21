@@ -45,7 +45,7 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     $cargo = $fila['cargo'];
 
     // Agregar contenido al PDF
-    $pdf->Write(20, utf8_decode("$fecha\n\nCERTIFICADO LABORAL\n"));
+    $pdf->Write(20, utf8_decode("$fecha\n\nCERTIFICADO DE INGRESO\n"));
     $pdf->MultiCell(0, 5, utf8_decode("Por medio de la presente, la empresa H2O CONTROL INGENIERÍA S.A.S, identificada
     con el NIT 800.240.559-6, se permite certificar que la señor/a $nombre, 
     identificado/a con cédula $cedula, trabaja para la empresa a

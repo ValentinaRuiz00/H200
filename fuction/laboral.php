@@ -63,12 +63,12 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     $pdf->MultiCell(0, 5, utf8_decode("H2OControl IngenieriaSAS"));
 
     // Descargar el PDF generado
-    $pdf->Output('certificado_ingreso.pdf', 'D');
+    $pdf->Output('certificado_laboral.pdf', 'D');
 } else {
     // La cédula no coincide
     echo '<script>';
     echo 'alert("La cédula no fue encontrada en la base de datos.");';
-    echo 'window.location.href = "../certificates/cert_ingreso.php";'; // Puedes redirigir a otra página si lo deseas
+    echo 'window.location.href = "../certificates/cert_labo.php";'; // Puedes redirigir a otra página si lo deseas
     echo '</script>';
     exit(); // Detener la ejecución del script para evitar la generación del PDF
 }

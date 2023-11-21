@@ -45,7 +45,7 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     $cargo = $fila['cargo'];
 
     // Agregar contenido al PDF
-    $pdf->Write(20, utf8_decode("$fecha\n\nCERTIFICADO LABORAL\n"));
+    $pdf->Write(20, utf8_decode("$fecha\n\nCERTIFICADO COLILLAS DE PAGO\n"));
     $pdf->MultiCell(0, 5, utf8_decode("Por medio de la presente, la empresa H2O CONTROL INGENIERÍA S.A.S, identificada
     con el NIT 800.240.559-6, se permite certificar que la señor/a $nombre, 
     identificado/a con cédula $cedula, trabaja para la empresa a
@@ -63,12 +63,12 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     $pdf->MultiCell(0, 5, utf8_decode("H2OControl IngenieriaSAS"));
 
     // Descargar el PDF generado
-    $pdf->Output('certificado_ingreso.pdf', 'D');
+    $pdf->Output('certificado_colillas.pdf', 'D');
 } else {
     // La cédula no coincide
     echo '<script>';
     echo 'alert("La cédula no fue encontrada en la base de datos.");';
-    echo 'window.location.href = "../certificates/cert_ingreso.php";'; // Puedes redirigir a otra página si lo deseas
+    echo 'window.location.href = "../certificates/cert_colillas.php";'; // Puedes redirigir a otra página si lo deseas
     echo '</script>';
     exit(); // Detener la ejecución del script para evitar la generación del PDF
 }
