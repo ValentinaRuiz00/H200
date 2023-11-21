@@ -1,13 +1,3 @@
-<?php
-    // Conection DB
-    include('../Conection/main.php');
-?>
-
-
-
-
-
-
 <!-- Incluir el archivo de encabezado -->
 <?php include('../layaouts/header.php'); ?>
 

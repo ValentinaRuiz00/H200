@@ -68,7 +68,9 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     // La cédula no coincide
     echo '<script>';
     echo 'alert("La cédula no fue encontrada en la base de datos.");';
+    echo 'window.location.href = "../certificates/cert_ingreso.php";'; // Puedes redirigir a otra página si lo deseas
     echo '</script>';
+    exit(); // Detener la ejecución del script para evitar la generación del PDF
 }
 
 // Cierra la conexión a la base de datos
