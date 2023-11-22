@@ -37,22 +37,37 @@ body {
 }
 
 /* Estilo para el input de texto */
-input[type="text"] {
-    padding: 10px;
+.input-text {
     font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 8px;
+    width: 200px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box;
 }
+
+/* Ocultar las flechas de incremento y decremento en el input de tipo número */
+.input-text[type="number"]::-webkit-inner-spin-button,
+.input-text[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 
 /* Estilo para el placeholder del input */
-input[type="text"]::placeholder {
-    color: #999;
+.input-text::placeholder {
+    color: #95a5a6;
 }
 
-/* Estilo para hover del input */
-input[type="text"]:hover {
-    border-color: #555;
+/* Estilo para hover y focus del input */
+.input-text:hover,
+.input-text:focus {
+    border-color: #2980b9;
 }
+
 
 /* estilos.css */
 
@@ -77,3 +92,6 @@ input[type="text"]:hover {
 .btc:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+
