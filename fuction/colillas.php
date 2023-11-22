@@ -14,140 +14,184 @@ $dompdf->loadHtml('DOCUMENTO HECHO CON DOM PDF
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalle de Sueldo</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            border: 1px solid #000;
+        }
 
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
+        header,
+        div,
+        footer {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #000;
+        }
 
-    th {
-      background-color: #f2f2f2;
-    }
+        div {
+            margin-top: 10px;
+        }
 
-    h2 {
-      color: #333;
-    }
+        .header-text2 {
+          text-align: center;
+          color: #000099;
+          text-transform: none;
+          font-style: italic;
+          width: 50%;
+          height: 50%;
+        }
 
-    /* Nueva clase para alinear a la derecha */
-    .text-right {
-      text-align: right;
-    }
   </style>
-  <title>Detalle de Sueldo</title>
+
 </head>
 <body>
 
-  <h2>Detalle de Sueldo</h2>
 
-  <table>
-    <thead>
+  <table border="1">
+
+  <thead>
+    <tr>
+        <th colspan="3">
+            <h1>H20 CONTROL INGENIERIA S.A.S</h1>
+            <p>NIT 800240559-6</p>
+        </th>
+    </tr>
+  </thead>
+
+  
+
+  
+  <tbody>
+    <tr class="header-text2">
+      <td colspan="3">
+        <p>Nómina # 107 correspondiente al periodo del 01/09/2023 al 13/09/2023</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="3">
+        <p><b>NOMBRE TRABAJADOR:</b> LUZ ESDERYS MUNERA SANCHEZ</p>
+        <p><b>IDENTIFICACION:</b> 43567710 <b>CARGO:</b> Analista administrativa </p>
+      </td>
+    </tr>
+
       <tr>
-        <th>Concepto</th>
-        <th>Debe</th>
-        <th>Haber</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Sueldo Básico</td>
-        <td class="text-right">$2,000.00</td>
+        <td>SUELDO BASICO</td>
+        <td class="text-right">1.845.200</td>
         <td></td>
       </tr>
       <tr>
-        <td>Días Trabajados</td>
-        <td class="text-right">30</td>
+        <td>DIAS TRABAJADOS</td>
+        <td class="text-right">15</td>
         <td></td>
       </tr>
       <tr>
-        <td>Devengado</td>
-        <td class="text-right">$2,000.00</td>
+        <td>DEVENGADO</td>
+        <td class="text-right">922.600</td>
         <td></td>
       </tr>
       <tr>
-        <td>Incapacidad</td>
-        <td class="text-right">-$50.00</td>
+        <td>INCAPACIDAD</td>
+        <td class="text-right">0</td>
         <td></td>
       </tr>
       <tr>
-        <td>Horas Extras</td>
-        <td class="text-right">$100.00</td>
+        <td>HORAS EXTRAS</td>
+        <td class="text-right">76.878</td>
         <td></td>
       </tr>
       <tr>
-        <td>Auxilio de Transporte</td>
-        <td class="text-right">$50.00</td>
+        <td>AUXILIO DE TRASNPORTE</td>
+        <td class="text-right">70.303</td>
         <td></td>
       </tr>
       <tr>
-        <td>Recargo Nocturno</td>
-        <td class="text-right">$20.00</td>
+        <td>RECARGO NOCTURNO</td>
+        <td class="text-right">0</td>
         <td></td>
       </tr>
       <tr>
-        <td>Turnos Extras</td>
-        <td class="text-right">$30.00</td>
+        <td>TURNOS EXTRAS</td>
+        <td class="text-right">0</td>
         <td></td>
       </tr>
       <tr>
-        <td>Otros Devengados</td>
-        <td class="text-right">$40.00</td>
+        <td>OTROS DEVENGADOS</td>
+        <td class="text-right">0</td>
         <td></td>
       </tr>
       <tr>
-        <td>Total Devengado</td>
-        <td class="text-right"><strong>$2,200.00</strong></td>
+        <td>TOTAL DEVENGADO </strong></td>
+        <td class="text-right"><strong>1.069.781</strong></td>
         <td></td>
       </tr>
       <tr>
-        <td>Aportes EPS</td>
+        <td>APORTES EPS</td>
         <td></td>
-        <td class="text-right">-$30.00</td>
+        <td class="text-right">39.979</td>
       </tr>
       <tr>
-        <td>Aportes Pensión</td>
+        <td>APORTES PENSION</td>
         <td></td>
-        <td class="text-right">-$50.00</td>
+        <td class="text-right">39.979</td>
       </tr>
       <tr>
-        <td>Retención en la Fuente</td>
+        <td>RETENCION EN LA FUENTE</td>
         <td></td>
-        <td class="text-right">-$20.00</td>
+        <td class="text-right">0</td>
       </tr>
       <tr>
-        <td>Fondo de Solidaridad</td>
+        <td>FONDO DE SOLIDARIDAD</td>
         <td></td>
-        <td class="text-right">-$10.00</td>
+        <td class="text-right">0</td>
       </tr>
       <tr>
-        <td>Prestamos</td>
+        <td>PRESTAMOS</td>
         <td></td>
-        <td class="text-right">-$15.00</td>
+        <td class="text-right">0</td>
       </tr>
       <tr>
-        <td>Otros Descuentos</td>
+        <td>OTROS DESCUENTOS</td>
         <td></td>
-        <td class="text-right">-$5.00</td>
+        <td class="text-right">50.000</td>
       </tr>
       <tr>
-        <td><strong>Total a Pagar</strong></td>
+        <td><strong>TOTAL DESCUENTOS</strong></td>
         <td></td>
-        <td class="text-right"><strong>$2,100.00</strong></td>
+        <td class="text-right"><strong>129.958</strong></td>
       </tr>
+      <tr>
+      <td><strong>NETO A PAGAR</strong></td>
+      <td></td>
+      <td class="text-right"><strong>939.823</strong></td>
+    </tr>
     </tbody>
-  </table>
+
+
+
+    <tfoot>
+     <tr>
+        <td colspan="3">
+            <p>FIRMA DEL EMPLEADO</p><br>
+            <p>C.C _________________________________________________________________________ </p>
+        </td>
+     </tr>
+    </tfoot>
+</table>
 
 </body>
 </html>
