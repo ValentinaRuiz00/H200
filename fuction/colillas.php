@@ -56,35 +56,95 @@ $dompdf->loadHtml('DOCUMENTO HECHO CON DOM PDF
     <thead>
       <tr>
         <th>Concepto</th>
-        <th>   Debe </th>
-        <th>   Haber </th>
+        <th>Debe</th>
+        <th>Haber</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Salario Base</td>
+        <td>Sueldo Básico</td>
         <td class="text-right">$2,000.00</td>
         <td></td>
       </tr>
       <tr>
-        <td>Antigüedad</td>
+        <td>Días Trabajados</td>
+        <td class="text-right">30</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Devengado</td>
+        <td class="text-right">$2,000.00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Incapacidad</td>
+        <td class="text-right">-$50.00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Horas Extras</td>
         <td class="text-right">$100.00</td>
         <td></td>
       </tr>
       <tr>
-        <td><strong>Total sin Retenciones</strong></td>
-        <td class="text-right"><strong>$2,100.00</strong></td>
+        <td>Auxilio de Transporte</td>
+        <td class="text-right">$50.00</td>
         <td></td>
       </tr>
       <tr>
-        <td>Retenciones</td>
+        <td>Recargo Nocturno</td>
+        <td class="text-right">$20.00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Turnos Extras</td>
+        <td class="text-right">$30.00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Otros Devengados</td>
+        <td class="text-right">$40.00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Total Devengado</td>
+        <td class="text-right"><strong>$2,200.00</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Aportes EPS</td>
+        <td></td>
+        <td class="text-right">-$30.00</td>
+      </tr>
+      <tr>
+        <td>Aportes Pensión</td>
         <td></td>
         <td class="text-right">-$50.00</td>
       </tr>
       <tr>
+        <td>Retención en la Fuente</td>
+        <td></td>
+        <td class="text-right">-$20.00</td>
+      </tr>
+      <tr>
+        <td>Fondo de Solidaridad</td>
+        <td></td>
+        <td class="text-right">-$10.00</td>
+      </tr>
+      <tr>
+        <td>Prestamos</td>
+        <td></td>
+        <td class="text-right">-$15.00</td>
+      </tr>
+      <tr>
+        <td>Otros Descuentos</td>
+        <td></td>
+        <td class="text-right">-$5.00</td>
+      </tr>
+      <tr>
         <td><strong>Total a Pagar</strong></td>
         <td></td>
-        <td class="text-right"><strong>$2,050.00</strong></td>
+        <td class="text-right"><strong>$2,100.00</strong></td>
       </tr>
     </tbody>
   </table>
