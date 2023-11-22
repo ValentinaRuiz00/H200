@@ -70,7 +70,7 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     con el NIT 800.240.559-6, se permite certificar que la señora $nombre, identificado/a con cédula $cedula, 
     trabaja para la empresa a partir del $fechaing, con contrato Indefinido y salario mensual de $1.845.200
     desempeñando el cargo de $cargo.\nSe expide este certificado a solicitud del empleado. Para más información puede
-    comunicarse al (604) 6074981 – 3146451208 – 3183890548.\n");
+    comunicarse al (604) 6074981 - 3146451208 - 3183890548.\n");
 
     // Función personalizada para justificar texto
     function justificarTexto($pdf, $texto, $ancho, $alturaLinea) {
@@ -106,6 +106,7 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     $pdf->SetFont('Arial', '', 12);
     $pdf->MultiCell(0, 5, utf8_decode("Directora Administrativa"));
     $pdf->MultiCell(0, 5, utf8_decode("H2OControl IngenieriaSAS"));
+
 
     // Descargar el PDF generado
     $pdf->Output('certificado_ingreso.pdf', 'D');
