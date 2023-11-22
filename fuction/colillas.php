@@ -198,7 +198,7 @@ $dompdf->loadHtml('DOCUMENTO HECHO CON DOM PDF
 
 ');
 
-// (Optional) Setup the paper size and orientation
+// (Optional) Setup the paper size and orientatio
 $dompdf->setPaper('A4', 'frame');
 
 // Render the HTML as PDF
