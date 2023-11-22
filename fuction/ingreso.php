@@ -1,4 +1,6 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+
 require('../fpdf/fpdf.php'); // Ajusta la ruta según la estructura de tu proyecto
 
 $conexion = mysqli_connect("localhost", "root", "", "h2o");
@@ -15,7 +17,7 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     // Crear instancia de FPDF
     $pdf = new FPDF('P', 'mm', 'Letter');
     $pdf->AddPage();
-    $pdf->SetFont('Arial', '', 12);
+    $pdf->SetFont('Arial', '', 12,'UTF-8');
     // Obtener el ancho de la página
     $anchoPagina = $pdf->GetPageWidth();
     // Obtener el ancho de la imagen
@@ -53,7 +55,7 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
     $cargo = $fila['cargo'];
 
     // Agregar contenido al PDF
-    $pdf->Write(70, utf8_decode("$fecha"));
+    $pdf->Write(85, utf8_decode("$fecha"));
 
     // Establecer la posición X para centrar el texto
     $pdf->SetFont('Arial', 'B', 12);
