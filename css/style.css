@@ -1,16 +1,7 @@
 /* estilos.css */
 
 /* Estilo general para el cuerpo de la página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
+
 
 /* Estilo para el contenedor principal */
 .primary {

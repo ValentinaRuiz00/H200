@@ -7,7 +7,6 @@
     <div class="primary">
 
         <h1 class="tittle">Certificado de Ingreso</h1><br>
-          <p class="paragraph">Un certificado de ingreso es un documento que certifica la entrada o admisión de una persona a cierto lugar, evento o institución. Puede tener diversos propósitos según el contexto en el que se emite</p>
 
           <form action="../fuction/ingreso.php" method="POST">
             <input type="number" name="dni" id="dni" placeholder="Ingrese su Cedula"  class="input-text"><br><br><br>

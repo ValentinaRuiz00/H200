@@ -7,8 +7,6 @@
     <div class="primary">
 
         <h1 class="tittle">Certificado Laboral</h1><br>
-          <p class="paragraph">
-           Un certificado laboral es un documento oficial emitido por un empleador que certifica la relación laboral entre un empleado y la empresa. Este documento suele incluir información sobre el periodo de empleo, el cargo ocupado, las responsabilidades del empleado y cualquier otra información relevante. Además, puede utilizarse como prueba de experiencia laboral al buscar empleo en el futuro o para otros fines administrativos.</p>
 
           <form action="../fuction/laboral.php" method="POST">
             <input type="number" name="dni" id="dni"  placeholder="Ingrese su Cedula"  class="input-text"><br><br><br>
